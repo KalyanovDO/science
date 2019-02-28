@@ -31,8 +31,8 @@ float* make_random_system(int n)
 	   
 	// задание матрицы случайных чисел и свободного вектора вместе
 	srand((unsigned)time(0));
-	float min_interval = 0.1;
-	float max_interval = 1.1;
+	float min_interval = 0.1f;
+	float max_interval = 1.1f;
 	for (int i = 0; i < m; i++) {
 		arr[i] = min_interval + ((float)rand() / RAND_MAX) * (max_interval - min_interval);
 	}

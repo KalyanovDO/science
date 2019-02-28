@@ -15,18 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="..\matrixmul\jakobi.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="mmul.cpp">
+    <ClCompile Include="..\matrixmul\main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="omp-tools.h">
+    <ClInclude Include="..\matrixmul\jakobi.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="mmul.h">
+    <ClInclude Include="..\matrixmul\omp-tools.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

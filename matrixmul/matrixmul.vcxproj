@@ -116,8 +116,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\перемножение матриц\перемножение матриц\mmul.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mmul.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mmul.h" />

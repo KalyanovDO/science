@@ -43,6 +43,18 @@ void callback_thread_end(
 	printf("[INFO] thread end (%llu)\n", thread_data->value);
 }
 
+//void callback_work(
+//	ompt_work_t wstype,              /* type of work region                 */
+//	ompt_scope_endpoint_t endpoint,       /* endpoint of work region             */
+//	ompt_data_t *parallel_data,           /* data of parallel region             */
+//	ompt_data_t *task_data,               /* data of task                        */
+//	uint64_t count,                       /* quantity of work                    */
+//	const void *codeptr_ra                /* return address of runtime call      */
+//) {
+//	printf("[INFO] thread end (%llu)\n", thread_data->value);
+//}
+
+
 int ompt_initialize(ompt_function_lookup_t lookup, ompt_data_t *tool_data) {
 	printf("[INFO] ompt_initialize is called\n");
 	ompt_set_callback_t set_callback = (ompt_set_callback_t)lookup("ompt_set_callback");

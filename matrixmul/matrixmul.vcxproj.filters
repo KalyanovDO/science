@@ -18,7 +18,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\перемножение матриц\перемножение матриц\mmul.cpp">
+    <ClCompile Include="mmul.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

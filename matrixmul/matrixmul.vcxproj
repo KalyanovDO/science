@@ -116,11 +116,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="jakobi.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mmul.cpp" />
+    <ClCompile Include="monte-karlo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="jakobi.h" />
     <ClInclude Include="mmul.h" />
+    <ClInclude Include="monte-karlo.h" />
     <ClInclude Include="omp-tools.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

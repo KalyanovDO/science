@@ -3,6 +3,8 @@
 #include <omp.h>
 #include <iostream>
 #include "mmul.h"
+#include "jakobi.h"
+#include "monte-karlo.h"
 #include "omp-tools.h"
 
 //#include "compute.h"
@@ -79,28 +81,3 @@ ompt_start_tool_result_t* ompt_start_tool(unsigned int omp_version, const char *
 	result->tool_data.ptr = (void*)result;
 	return result;
 }
-
-int main(int argc, char* argv[])
-{
-	int n;
-	int num_threads;
-	if (argc != 3) {
-		cout << "Incorrect input. Try again.\n" <<
-			"    The input data should contain:\n 1)number of threads in integer;\n 2)dimention of matrix in integer shared by space;\n";
-		exit(1);
-	}
-	else {
-		n = atoi(argv[2]);
-		num_threads = atoi(argv[1]);
-	}
-
-	if (num_threads < 1) {
-		cout << "\n" << "Please, enter the correct number of threads in integer\n";
-		exit(1);
-	}
-	omp_set_num_threads(num_threads);
-
-	mmul(make_matrix_of_1(n), make_matrix_of_2(n), make_matrix(n), n);
-	//system("pause");
-	return 0;
-}//*/

@@ -2,6 +2,9 @@
 #include <ctime>  
 #include <cstdlib>
 //#include <fstream>
+#include <omp.h>
+#include <vector>
+
 
 using namespace std;
 int dimention_of_space = 3;
@@ -149,7 +152,7 @@ int main()
 //*/
 
 //*
-int main(int argc, char* argv[])
+void main_func(int argc, char* argv[])
 {
 	int n; //размерность задачи
 	float err;//требуемая точность решения
@@ -183,7 +186,4 @@ int main(int argc, char* argv[])
 	}
 
 	mk_method(n, err, number_of_threads);
-
-	//system("pause");
-	return 0;
 }//*/

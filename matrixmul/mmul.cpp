@@ -3,6 +3,8 @@
 #include <cstdlib>
 #include <omp.h>
 #include <fstream>
+#include <vector>
+
 
 using namespace std;
 
@@ -161,8 +163,9 @@ int main()
 //*/
 
 //*
-int main(int argc, char* argv[])
+void main_func(int argc, char* argv[])
 {
+
 	int n;
 	int num_threads;
 	if (argc != 3) {
@@ -182,6 +185,6 @@ int main(int argc, char* argv[])
 	omp_set_num_threads(num_threads);
 
 	mmul(make_matrix_of_1(n), make_matrix_of_2(n), make_matrix(n), n);
-	//system("pause");
-	return 0;
+
+
 }//*/

@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include <fstream>
 #include <omp.h>
-
+#include <vector>
 
 using namespace std;
 
@@ -200,7 +200,7 @@ int main() {
 //*/
 
 //*
-int main(int argc, char* argv[])
+void main_func(int argc, char* argv[])
 {
 	int n; //размерность задачи
 	float err;//требуемая точность решения
@@ -242,9 +242,8 @@ int main(int argc, char* argv[])
 
 	
 	//вызываем функцию метода якоби
-	//она выводит результаты в файл
 	jakobi_method(make_random_a(n), make_random_b(n), n, err, max_k);
+	
+	//time_points.push_back(make_pair(2, omp_get_wtime()));
 
-	//system("pause");
-	return 0;
 }//*/
